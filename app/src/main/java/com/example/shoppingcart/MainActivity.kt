@@ -1,5 +1,6 @@
 package com.example.shoppingcart
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
@@ -25,15 +26,7 @@ class MainActivity: AppCompatActivity() {
         binding.listviewProduct.adapter = adapterProduct
 
         binding.buttonProduct.setOnClickListener {
-            val product = binding.edittextProduct.text.toString()
-
-            if(product.isNotEmpty()) {
-                adapterProduct.add(product)
-                binding.edittextProduct.text.clear()
-            } else {
-                binding.edittextProduct.error = "Please, insert some value!"
-            }
-
+            startActivity(Intent(this, ProductActivity::class.java))
         }
     }
 }

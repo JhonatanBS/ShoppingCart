@@ -7,15 +7,6 @@
     android:paddingVertical="50dp"
     android:paddingHorizontal="16dp">
 
-    <EditText
-        android:id="@+id/edittext_product"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:hint="Inserted the product"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_product"
@@ -24,7 +15,7 @@
         android:text="Add product"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edittext_product" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/listview_product"
